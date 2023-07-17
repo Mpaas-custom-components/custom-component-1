@@ -1,1 +1,7 @@
-{}
+{
+  "usingComponents": {
+    "icon-menu-card" : "/components/icon-menu-card/icon-menu-card"
+  },
+  "transparentTitle": "always",
+  "defaultTitle": ""
+}

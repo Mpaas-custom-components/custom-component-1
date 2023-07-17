@@ -1,0 +1,17 @@
+.test-page{
+  min-width:100vw ;
+  min-height: 100vh;
+}
+
+.background-container{
+  width: 81.3%;
+  height: 450rpx;
+  background-color: orange;
+  /* background-image: linear-gradient(135deg, #f06, #09f); */
+  border-bottom-left-radius: 50% 20px;
+  border-bottom-right-radius: 50% 20px;
+  padding: 70rpx;
+  display: grid;
+  grid-template-columns: 22.875% 22.875% 22.875% 22.875%;
+  gap: 20rpx;
+}
