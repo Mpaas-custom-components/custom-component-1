@@ -1,0 +1,4 @@
+<view class="menu-icon-card">
+  <image  src="{{images}}" class="menu-icon" />
+  <text class="menu-name">{{name}}</text>
+</view>

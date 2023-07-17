@@ -1,0 +1,21 @@
+.menu-icon-card{
+  width: auto;
+  height: 200rpx;
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "GothamBold";
+  gap: 10rpx;
+}
+
+.menu-icon{
+  width: 85%;
+  height: 70%;
+}
+.menu-name{
+  font-size: 30rpx;
+  color: white;
+
+}
