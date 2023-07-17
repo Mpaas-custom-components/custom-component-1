@@ -1,3 +1,17 @@
-page {
-  background: #f7f7f7;
+
+@font-face {
+  font-family: GothamBook;
+  src: url("/fonts/GothamBook.ttf");
+}
+@font-face {
+  font-family: GothamBold;
+  src: url("/fonts/GothamBold.ttf");
+}
+@font-face {
+  font-family: GothamMedium;
+  src: url("/fonts/GothamMedium.ttf");
+}
+@font-face {
+  font-family: GothamLight;
+  src: url("/fonts/GothamLight.ttf");
 }
