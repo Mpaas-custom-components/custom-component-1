@@ -1,0 +1,5 @@
+<view class="circle-button" catchtap="handleTap" style="width:{{width}}rpx; height:{{height}}rpx; background-color:{{color}}">
+  <view class="circle-button-inner">
+    <image src="{{handleIcon}}" class="center-icon" />
+  </view>
+</view>
