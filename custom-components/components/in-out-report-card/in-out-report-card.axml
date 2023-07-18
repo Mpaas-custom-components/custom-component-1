@@ -1,7 +1,7 @@
 <view class="card" onTap="handleTap" style="color: '{{color}}'; background-color:{{backgroundColor}}; width: {{width}}; height: {{height}};">
   <view class="column">
     
-    <view class="{{themeIcon == "green" ? 'circle-icon-green' : 'circle-icon-red'}}">
+    <view class="{{themeIcon == 'green' ? 'circle-icon-green' : 'circle-icon-red'}}">
       <view class="circle-icon-inner">
         <image src="{{handleIcon}}" class="center-icon" />
       </view>

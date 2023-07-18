@@ -1,0 +1,20 @@
+<view class="main" >
+
+  <view class="container">
+    <view class="container-column">
+
+      <in-out-report-card backgroundColor="" color="" themeIcon="green" width="" height="" iconImage="https://cdn-icons-png.flaticon.com/512/2474/2474450.png" title="Income" subTitle="16.100.000" url=">>>url<<<"></in-out-report-card>
+
+    </view>
+    <view class="container-column">
+      
+      <in-out-report-card backgroundColor="" color="" themeIcon="red" width="" height="" iconImage="https://cdn-icons-png.flaticon.com/512/2474/2474450.png" title="Income" subTitle="16.100.000" url=">>>url<<<"></in-out-report-card>
+      
+    </view>
+  </view>
+  <in-out-report-card backgroundColor="" color="" themeIcon="red" width="" height="" iconImage="https://cdn-icons-png.flaticon.com/512/2474/2474450.png" title="Income" subTitle="16.100.000" url=">>>url<<<"></in-out-report-card>
+
+  
+  
+  
+</view>

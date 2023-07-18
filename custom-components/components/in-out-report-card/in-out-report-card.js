@@ -22,8 +22,12 @@ Component({
     },
 
     handleIcon() {
-      const iconImage = this.props.iconImage;
-      const isImageUrl = iconImage.indexOf("http://") == 0 || iconImage.indexOf("https://") == 0
+      let iconImage = ""
+      let isImageUrl = ""
+      if(this.props.iconImage){
+        iconImage = this.props.iconImage;
+        isImageUrl = iconImage.indexOf("http://") == 0 || iconImage.indexOf("https://") == 0
+      }
     
       if (isImageUrl) {
         this.setData({
