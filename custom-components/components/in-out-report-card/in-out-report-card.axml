@@ -1,0 +1,15 @@
+<view class="card" onTap="handleTap" style="color: '{{color}}'; background-color:{{backgroundColor}}; width: {{width}}; height: {{height}};">
+  <view class="column">
+    
+    <view class="{{themeIcon == "green" ? 'circle-icon-green' : 'circle-icon-red'}}">
+      <view class="circle-icon-inner">
+        <image src="{{handleIcon}}" class="center-icon" />
+      </view>
+    </view>
+
+  </view>
+  <view class="teks-container">
+    <text class="title">{{title}}</text>
+    <text class="subTitle">{{subTitle}}</text>
+  </view>
+</view>
