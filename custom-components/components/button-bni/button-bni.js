@@ -2,7 +2,8 @@ Component({
   mixins: [],
   data: {
     bgColor: "orange",
-    fontColor: ""
+    fontColor: "",
+    classData: "",
   },
   props: {},
   didMount() {
@@ -47,6 +48,16 @@ Component({
         this.setData({
           fontColor: '#ffffff'
         })
+      }
+    },
+
+    btnType(){
+      if(!this.props.type || this.props.type == "primary"){
+        this.setData({
+          classData : "btn"
+        })
+      }else if(this.props.type === "filter"){
+        this.setData({})
       }
     }
   },
