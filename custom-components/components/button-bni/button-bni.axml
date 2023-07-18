@@ -1,6 +1,6 @@
 <button
   onTap="onTap"
-  class="btn {{size ? size : 'large'}}"
+  class="{{classData}} {{size ? size : 'large'}}"
   type="{{type}}"
   loading={{loading}}
   disabled={{disabled}}

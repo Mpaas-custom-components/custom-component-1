@@ -8,7 +8,8 @@ Component({
   props: {},
   didMount() {
     this.colorChange(),
-    this.determineContrastColor(this.data.bgColor)
+    this.determineContrastColor(this.data.bgColor),
+    this.btnType()
   },
   didUpdate() {},
   didUnmount() {},
@@ -56,8 +57,10 @@ Component({
         this.setData({
           classData : "btn"
         })
-      }else if(this.props.type === "filter"){
-        this.setData({})
+      }else if(this.props.type === "quick"){
+        this.setData({
+          classData : "quickBtn"
+        })
       }
     }
   },
