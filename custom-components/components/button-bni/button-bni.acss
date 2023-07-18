@@ -5,17 +5,19 @@
   height: 100rpx;
   border-radius: 5px;
   font-family: GothamBold;
+  font-size: medium;
   border-radius: 50rpx;
+  box-shadow: 0px 0px 1px gray;
 }
 
 .large{
-  width: 750rpx
+  width: 100%
 }
 
 .medium{
-  width: 375rpx
+  width: 50%
 }
 
 .small{
-  width: 187.5rpx
+  width: 25%
 }
