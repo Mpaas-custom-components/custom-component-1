@@ -1,0 +1,74 @@
+.card {
+  width: 80%;
+  height: 70%; 
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 10rpx; 
+  display: flex;
+  padding: 10rpx;
+}
+
+.column {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rpx;
+}
+
+.circle-icon-green {
+  width: 65rpx;
+  height: 65rpx;
+  margin-left: -60%;
+  border-radius: 50%;
+  border: 5rpx solid rgb(71, 228, 47); 
+  background-color: rgb(71, 228, 47, 0.2);
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.circle-icon-red {
+  width: 65rpx;
+  height: 65rpx;
+  margin-left: -60%;
+  border-radius: 50%; 
+  border: 5rpx solid rgb(248, 8, 8); 
+  background-color: rgb(248, 8, 8, 0.2);
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.circle-icon-inner {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.center-icon {
+  width: 80%; 
+  height: 80%;
+}
+
+.teks-container {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rpx;
+  margin-left: -35%;
+}
+
+.title {
+  font-size: 24rpx;
+  font-family: GothamMedium;
+}
+
+.subTitle {
+  font-size: 28rpx;
+  font-family: GothamBold;
+}

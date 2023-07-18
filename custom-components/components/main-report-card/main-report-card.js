@@ -8,15 +8,13 @@ Component({
   },
   props: {},
   didMount() {
-    console.log(this.props, "<<<<<<<<<<<<<<<");
     this.classContainer()
   },
   didUpdate() {},
   didUnmount() {},
   methods: {
     handleTap() {
-      console.log(this.props, "ZZZZZZZZzz");
-      
+      console.log(this.props.url, ">>> url main-report-card <<<");
     },
 
     classContainer(){
