@@ -1,0 +1,20 @@
+<view class="card" onTap="handleTap" style="width:{{width}}rpx; height:{{height}}rpx; background-color:{{backgroundColor}}; color:{{color}}">
+  <!-- Baris 1 -->
+  <view class="row">
+    <view class="column">
+      <text class="text-main">{{value1}}</text>
+    </view>
+    <view class="column">
+      <text class="text-persen">{{value2}}</text>
+    </view>
+  </view>
+  <!-- Baris 2 -->
+  <view class="row">
+    <view class="column">
+      <text class="text-money">{{value3}}</text>
+    </view>
+    <view class="column">
+      <text class="text-date">{{value4}}</text>
+    </view>
+  </view>
+</view>
