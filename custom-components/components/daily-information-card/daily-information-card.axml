@@ -1,0 +1,8 @@
+<view class="daily-information-card">
+  <view class="card-title">
+    <text class="card-text-title"><image class="icon-title" src="{{iconImage}}" /> {{' ' + title}} </text>
+  </view>
+  <view class="card-image">
+    <image class="image" src="{{topicImage}}" />
+  </view>
+</view>
