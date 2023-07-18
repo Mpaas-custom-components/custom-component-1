@@ -49,8 +49,5 @@ Component({
       });
      },
 
-     changeTheme() {
-      
-     }
   },
 });
