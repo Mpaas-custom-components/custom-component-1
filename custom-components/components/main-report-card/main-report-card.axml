@@ -1,4 +1,4 @@
-<view class="card" onTap="handleTap" style="width:{{width}}rpx; height:{{height}}rpx; background-color:{{backgroundColor}}; color:{{color}}">
+<view a:if="{{ type == "primary" }}" class="card" onTap="handleTap" style="width:{{width}}rpx; height:{{height}}rpx; background-color:{{backgroundColor}}; color:{{color}}" url="">
   <!-- Baris 1 -->
   <view class="row">
     <view class="column">
@@ -15,6 +15,46 @@
     </view>
     <view class="column">
       <text class="text-date">{{value4}}</text>
+    </view>
+  </view>
+</view>
+
+<view a:if="{{ type == "secondary" }}" class="card-secondary" ref="cardSecondaryRef" onTap="handleTap" style="color: '{{color}}'; background-color:{{backgroundColor}}; width: {{width}}; height: {{height}};" url="">
+  <view class="column-secondary">
+    
+    <view class="{{theme == 'green' ? 'circle-icon-green-secondary' : 'circle-icon-red-secondary'}}" style="width: {{imageSize}}rpx; height: {{imageSize}}rpx">
+      <view class="circle-icon-inner-secondary">
+        <image src="{{handleIcon}}" class="center-icon-secondary" />
+      </view>
+    </view>
+
+  </view>
+  <view class="teks-container-secondary">
+    <text class="value1-secondary" style="font-size: {{fontSizeValue1}}rpx;">{{value1}}</text>
+    <text class="value2-secondary" style="font-size: {{fontSizeValue2}}rpx;">{{value2}}</text>
+  </view>
+</view>
+
+
+<view a:if="{{ type == 'tertiary' }}" class="card-tertiary" onTap="handleTap" style="color: '{{color}}'; background-color:{{backgroundColor}}; width: {{width}}; height: {{height}};" url="">
+  <view class="column-tertiary">
+    <view class="icon-tertiary">
+      <view class="icon-inner-tertiary">
+        <image src="{{handleIcon}}" class="center-icon-tertiary" />
+      </view>
+    </view>
+  </view>
+ 
+  <view class="column-tertiary-value">
+    <view class="teks-container-tertiary">
+      <text class="value1-tertiary">{{value1}}</text>
+      <text class="value2-tertiary">{{value2}}</text>
+    </view>
+  </view>
+
+  <view class="column-tertiary">
+    <view class="teks-container-tertiary">
+      <text class="{{theme == 'green' ? 'value3-tertiary-green' :  'value3-tertiary-red' }}">{{value3}}</text>
     </view>
   </view>
 </view>
