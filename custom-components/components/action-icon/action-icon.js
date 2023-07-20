@@ -1,4 +1,4 @@
-// <button-icon-1 color="#ff5900" width="200" height="200" onTap="onTap" iconImage="cash"></button-icon-1>
+// <action-icon type="" color="#ff5900" width="200" height="200" onTap="onTap" iconImage="https://cdn-icons-png.flaticon.com/512/5899/5899792.png" url=">>> URL <<<"></action-icon>
 Component({
   mixins: [],
   data: {
