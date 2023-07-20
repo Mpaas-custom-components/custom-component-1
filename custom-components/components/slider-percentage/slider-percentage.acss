@@ -1,0 +1,86 @@
+text {
+  font-size: 28rpx;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.outer-container {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30rpx 25rpx;
+  border-bottom-width: 1rpx;
+  border-bottom-color: lightgray;
+  border-bottom-style: solid;
+}
+
+.container {
+  width: 700rpx;
+  height: 100rpx;
+  flex-direction: row;
+}
+
+.inner-container-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inner-container-top-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20rpx;
+}
+
+.inner-container-top-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 15rpx;
+  gap: 15rpx;
+}
+
+image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.inner-container-bottom {
+  margin-top: 30rpx;
+  padding-left: 45rpx;
+  padding-right: 15rpx;
+  height: max-content;
+}
+
+.circle {
+  border-radius: 100%;
+  margin-top: 4rpx;
+  width: 23rpx;
+  height: 23rpx;
+  /* background-color: salmon; */
+}
+
+.text-title {
+  color: salmon;
+  font-weight: bold;
+}
+
+.percentage-bar-active {
+  background-color: salmon;
+  /* width: 30%; */
+  height: 20rpx;
+  border-radius: 20rpx;
+  position: absolute;
+}
+
+.percentage-bar {
+  background-color: lightgray;
+  width: 100%;
+  height: 20rpx;
+  border-radius: 20rpx;
+}
