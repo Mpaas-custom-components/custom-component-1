@@ -1,0 +1,60 @@
+.container {
+  box-shadow: 0px 0px 5px gray;
+  width: 100%;
+  height: max-content;
+  min-height: 200rpx;
+  font-family: GothamBold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rpx;
+}
+
+.icon {
+  box-shadow: 0px 0px 5px gray;
+  height: max-content;
+  width: max-content;
+  border-radius: 100%;
+  padding: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.title {
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+}
+
+.title-data {
+  display: flex;
+  align-items: center;
+  gap: 10rpx;
+}
+
+.title-data image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.total {
+  font-size: large;
+  margin: 0px 0px;
+}
+
+.title-data-percentage {
+  font-size: small;
+  color: red;
+}
+
+.title-data-month {
+  color: rgba(128, 128, 128, 0.5);
+  font-size: small;
+}
