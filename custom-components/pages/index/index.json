@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    
+    "slider-percentage": "/components/slider-percentage/slider-percentage"
   }
 }
