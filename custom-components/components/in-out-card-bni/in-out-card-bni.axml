@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="icon" style="background : #FFD6A5">
+    <image src="/images/{{typeData.svg}}" />
+  </view>
+  <view class="title">
+    <view class="title-data">
+      <text>{{typeData.type}}</text>
+      <image src="/images/{{typeData.arrow}}" />
+      <text class="title-data-percentage">{{percentage}}</text>
+      <text class="title-data-month">vs</text>
+      <text class="title-data-month">Last month</text>
+    </view>
+    <view class="total">
+      {{value}}
+    </view>
+  </view>
+</view>
