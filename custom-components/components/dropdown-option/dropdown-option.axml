@@ -1,0 +1,25 @@
+
+<view>
+
+  <view style="display: flex;">
+    <view style="width: 200rpx; height: 50rpx; margin-bottom: 40rpx; margin-left: 20rpx;">
+      <view style="font-family: GothamBold; height: 60rpx; display: flex; align-items: center; padding: 10rpx; background-color: white; border-radius: 10rpx;">{{selectedMonth}}</view>
+    </view>
+    <view style="width: 200rpx; height: 50rpx; margin-bottom: 40rpx; margin-left: 40rpx;">
+      <view style="font-family: GothamBold; height: 60rpx; display: flex; align-items: center; padding: 10rpx; background-color: white; border-radius: 10rpx;">{{selectedYear}}</view>
+    </view>
+  </view>
+
+  <picker-view style="width: 730rpx; height: 400rpx;" onChange="onChangeValue" value="{{rawData}}">
+    <picker-view-column class="container" style="width: 100rpx;">
+      <view class="picker-text" style="font-family: GothamBold;" a:for="{{ monthList }}" a:for-item="month">{{month}}</view>
+    </picker-view-column>
+    <picker-view-column class="container" style="width: 100rpx;">
+      <view class="picker-text" style="font-family: GothamBold;" a:for="{{ yearList }}" a:for-item="year">{{year}}</view>
+    </picker-view-column>
+    <picker-view-column class="container" style="width: 100rpx;">
+      <view class="picker-text" style="font-family: GothamBold;" a:for="{{ dayList }}" a:for-item="year">{{year}}</view>
+    </picker-view-column>
+  </picker-view>
+
+</view>
