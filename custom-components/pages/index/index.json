@@ -1,4 +1,8 @@
 {
   "usingComponents": {
+<<<<<<< HEAD
+    "slider-percentage": "/components/slider-percentage/slider-percentage"
+=======
+>>>>>>> f6b5ba44670b31b7bfa8ba4ac9d2b888c2aee781
   }
 }
