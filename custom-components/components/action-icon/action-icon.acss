@@ -1,0 +1,43 @@
+
+.circle-button {
+  border-radius: 50%; 
+  border: 5rpx solid white; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.circle-button-inner {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.center-icon {
+  width: 80%; 
+  height: 80%;
+}
+
+.circle-button-secondary {
+  border-radius: 50%; 
+  border: 5rpx solid rgb(179, 179, 179); 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  background-color: rgb(225, 225, 225);
+}
+
+.circle-button-inner-secondary {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.center-icon-secondary {
+  width: 80%; 
+  height: 80%;
+}
