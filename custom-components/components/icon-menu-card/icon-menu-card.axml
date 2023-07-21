@@ -1,4 +1,4 @@
-<view class="menu-icon-card">
+<view class="menu-icon-card" style="width:{{width ? width : 'auto'}};height:{{height ? height : 'auto'}};">
   <image  src="{{images}}" class="menu-icon" />
   <text class="menu-name" style="color:{{color ? color : 'black'}};">{{name}}</text>
 </view>
