@@ -1,12 +1,19 @@
 {
-  "name": "@adkasy/custom-components",
-  "version": "1.0.0",
+  "name": "@mpaas-test-component/cust-components-mpaas",
+  "version": "1.0.3",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "custom-component",
+    "mini-program"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository":{
+    "type" : "git",
+    "url" : "https://github.com/Mpaas-custom-components/custom-component-1"
+  }
 }
