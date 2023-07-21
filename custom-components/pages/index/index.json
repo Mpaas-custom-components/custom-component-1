@@ -1,6 +1,1 @@
-{
-  "usingComponents": {
-    "popular-activity-card" : "/components/popular-activity-card-bni/popular-activity-card-bni",
-    "icon-menu-card" : "/components/icon-menu-card/icon-menu-card"
-  }
-}
+{}
