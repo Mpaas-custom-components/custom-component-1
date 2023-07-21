@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "dropdown": "/components/dropdown-action/dropdown-action",
+    "dropdown-date": "/components/dropdown-date/dropdown-date"
+  }
 }
