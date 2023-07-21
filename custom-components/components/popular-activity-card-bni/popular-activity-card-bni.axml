@@ -1,0 +1,6 @@
+<view class="popular-card {{size ? size : 'medium'}}" style="background-image:url({{image}})">
+  <view class="popular-content-{{size ? size : 'medium'}}">
+    <text class="popular-title-{{size ? size : 'medium'}}">{{title}}</text>
+    <text class="popular-description-{{size ? size : 'medium'}}">{{description}}</text>
+  </view>
+</view>
