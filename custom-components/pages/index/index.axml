@@ -1,3 +1,11 @@
-<view>
-
+<view class="test-page">
+  <view class="popular-activity-container">
+    <view class="column-1">
+    <popular-activity-card size="large"></popular-activity-card>
+    </view>
+    <view class="column-2">
+      <popular-activity-card size="medium"></popular-activity-card>
+      <popular-activity-card size="medium"></popular-activity-card>
+    </view>
+  </view>
 </view>
