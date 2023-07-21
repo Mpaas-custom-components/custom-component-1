@@ -1,5 +1,6 @@
 // <main-menu-card type="primary" color="" backgroundColor="" width="" height="" value1= "Cash" value2="1.78%" value3="$ 6.899.00" value4="23/10/2023 12:45" url=">>>url<<<"></main-menu-card>
 // <main-menu-card type="secondary" themeIcon="green" color="" backgroundColor="" width="" height="" value1="Income" value2="16.100.000" url=">>>url<<<" iconImage="https://cdn-icons-png.flaticon.com/512/2474/2474450.png"></main-menu-card>
+// <main-menu-card type="tertiary" themeIcon="green" color="" backgroundColor="" width="" height="" value1="Income" value2="16.100.000" url=">>>url<<<" iconImage="https://cdn-icons-png.flaticon.com/512/2474/2474450.png"></main-menu-card>
 
 Component({
   mixins: [],
