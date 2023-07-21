@@ -6,15 +6,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  font-family: "GothamBold";
-  gap: 10rpx;
+  font-family: "GothamMedium";
+  gap: 10rpx
 }
 
 .menu-icon{
-  width: 85%;
-  height: 70%;
+  width: 100%;
+  height: 50%;
 }
 .menu-name{
-  font-size: 30rpx;
+  font-size: 25rpx;
   color: white;
+  text-align: center;
+
+}
+
+.text-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
 }
