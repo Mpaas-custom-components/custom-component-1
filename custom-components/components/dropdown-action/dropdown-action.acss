@@ -1,0 +1,37 @@
+.container{
+  position: relative;
+}
+
+.dropdown-toggle {
+  border: 1px gray solid;
+  width: 30vw;
+  padding: 10px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.dropdown-menu {
+  white-space: nowrap;
+  border: solid 1px gray;
+  border-radius: 5px;
+  width: 35vw;
+  height: 40vh;
+  line-height: 40px;
+  position: absolute;
+  background: white;
+}
+
+.dropdown-item{
+  text-align: start;
+  padding-left: 5px;
+  transition: .08s ease-out;
+}
+
+.dropdown-item:active{
+  background: orange;
+  color: white;
+}
+

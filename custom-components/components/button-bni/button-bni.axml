@@ -6,6 +6,7 @@
   disabled={{disabled}}
   form-type="{{formType}}"
   style="background : {{bgColor}}; color : {{fontColor}}"
+  name="{{name}}"
   >
   <slot></slot>
 </button>

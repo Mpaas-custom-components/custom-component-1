@@ -1,0 +1,13 @@
+<view class="container">
+  <button class="dropdown-toggle" onTap="toggleDropDown">
+    {{valueData ? valueData : defaultValue}} ⌵
+  </button>
+
+  <scroll-view a:if="{{ isDropdownOpen }}" scroll-y="{{true}}" class="dropdown-menu">
+    <block a:for="{{ items }}" a:for-item="dropdownData">
+      <view class="dropdown-item" onTap="onChange" data-value={{dropdownData}}>{{dropdownData}}
+      </view>
+    </block>
+  </scroll-view>
+
+</view>
