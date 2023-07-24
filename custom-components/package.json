@@ -1,6 +1,6 @@
 {
-  "name": "@adkasy/custom-components",
-  "version": "1.0.0",
+  "name": "@mpaas-test-component/cust-components-mpaas",
+  "version": "1.0.2",
   "description": "",
   "main": "app.js",
   "scripts": {
