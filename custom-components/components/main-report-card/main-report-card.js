@@ -59,21 +59,26 @@ Component({
     },
 
     setDynamicFontSize() {
-      const query = this.createSelectorQuery();
+      const query = my.createSelectorQuery();
       query.select('.card-secondary').boundingClientRect();
       query.exec(res => {
         console.log(res[0] ? res[0].width : 0, "<<<< WIDTH");
-        const cardWidth = res[0] ? res[0].width : 0;
+        let cardWidth = res[0] ? res[0].width : 0;
 
         // const newFontSizeValue1 = Math.max(Math.min(cardWidth / 20, 28), 18); 
         // const newFontSizeValue2 = newFontSizeValue1 + 4; 
         let newFontSizeValue1;
         let newImageSize;
+        let newFontSizeValue2
         if(cardWidth > 250 ) {
           newFontSizeValue1 = 34; 
+          newFontSizeValue2 = newFontSizeValue1 + 4; 
           newImageSize = 100
+        } else {
+          newFontSizeValue1 = 24; 
+          newFontSizeValue2 = 28; 
+          newImageSize = 65;
         }
-        let newFontSizeValue2 = newFontSizeValue1 + 4; 
 
         console.log(newFontSizeValue1, newFontSizeValue2);
 

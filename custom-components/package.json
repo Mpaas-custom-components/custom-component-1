@@ -1,10 +1,6 @@
 {
   "name": "@mpaas-test-component/cust-components-mpaas",
-<<<<<<< HEAD
-  "version": "1.0.2",
-=======
-  "version": "1.0.3",
->>>>>>> fc93ba231f3db7f38465c3512a4cbf4408d47796
+  "version": "1.0.5",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -15,14 +11,5 @@
     "mini-program"
   ],
   "author": "",
-<<<<<<< HEAD
   "license": "ISC"
 }
-=======
-  "license": "ISC",
-  "repository":{
-    "type" : "git",
-    "url" : "https://github.com/Mpaas-custom-components/custom-component-1"
-  }
-}
->>>>>>> fc93ba231f3db7f38465c3512a4cbf4408d47796
