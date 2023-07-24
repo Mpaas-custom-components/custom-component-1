@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "main-menu-card" : "/components/main-report-card/main-report-card"
+  }
+}
