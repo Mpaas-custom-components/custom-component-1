@@ -4,11 +4,12 @@
 }
 
 .card-title{
-  width: 94.3%;
+  width: calc(100% - 40rpx);
   height: 25%;
-  padding: 20rpx;
+  padding-right: 20rpx;
+  padding-left: 20rpx;
   display: flex;
-  gap: 10rpx;
+  gap: 5rpx;
   align-items: center;
   font-size: 30rpx;
   text-align: left;
