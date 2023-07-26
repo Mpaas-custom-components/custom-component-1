@@ -25,9 +25,6 @@ Component({
   },
   didUnmount() {},
   methods: {
-    handleTap() {
-      console.log(this.props.url, ">>> url main-report-card <<<");
-    },
 
     classContainer(){
       const { width, height, backgroundColor, color } = this.props;

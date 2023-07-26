@@ -1,4 +1,4 @@
-<view a:if="{{ type == 'primary' }}" class="card" onTap="handleTap" style="width:{{width}}rpx; height:{{height}}rpx; background-color:{{backgroundColor}}; color:{{color}}" url="">
+<view a:if="{{ type == 'primary' }}" class="card" style="width:{{width}}rpx; height:{{height}}rpx; background-color:{{backgroundColor}}; color:{{color}}" url="">
   <!-- Baris 1 -->
   <view class="row">
     <view class="column">
@@ -19,7 +19,7 @@
   </view>
 </view>
 
-<view a:if="{{ type == 'secondary' }}" class="card-secondary" ref="cardSecondaryRef" onTap="handleTap" style="color: '{{color}}'; background-color:{{backgroundColor}}; width: {{width}}; height: {{height}};" url="">
+<view a:if="{{ type == 'secondary' }}" class="card-secondary" ref="cardSecondaryRef" style="color: '{{color}}'; background-color:{{backgroundColor}}; width: {{width}}; height: {{height}};" url="">
   <view class="column-secondary">
     
     <view class="{{theme == 'green' ? 'circle-icon-green-secondary' : 'circle-icon-red-secondary'}}" style="width: {{imageSize}}rpx; height: {{imageSize}}rpx">
@@ -36,7 +36,7 @@
 </view>
 
 
-<view a:if="{{ type == 'tertiary' }}" class="card-tertiary" onTap="handleTap" style="color: '{{color}}'; background-color:{{backgroundColor}}; width: {{width}}; height: {{height}};" url="">
+<view a:if="{{ type == 'tertiary' }}" class="card-tertiary" style="color: '{{color}}'; background-color:{{backgroundColor}}; width: {{width}}; height: {{height}};" url="">
   <view class="column-tertiary">
     <view class="icon-tertiary">
       <view class="icon-inner-tertiary">
