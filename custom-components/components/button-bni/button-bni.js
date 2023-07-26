@@ -1,15 +1,18 @@
 Component({
   mixins: [],
   data: {
-    bgColor: "orange",
+    bgColor: "#ffa500",
     fontColor: "",
     classData: "",
+    disabledClass: ""
   },
   props: {},
   didMount() {
+    console.log(this.props);
     this.colorChange(),
     this.determineContrastColor(this.data.bgColor),
     this.btnType()
+    this.handleDisabled()
   },
   didUpdate() {},
   didUnmount() {},
@@ -25,7 +28,7 @@ Component({
     colorChange() {
       if (!this.props.color) {
         this.setData({
-          bgColor: "orange"
+          bgColor: "#ffa500"
         })
       } else {
         this.setData({
@@ -40,14 +43,14 @@ Component({
       const blue = parseInt(background.substr(5, 2), 16);
 
       const brightness = (red * 299 + green * 587 + blue * 114) / 1000;
-
-      if (brightness > 125 && background != "#FFA500") {
+      console.log(brightness, "<<<brightness");
+      if (brightness > 125) {
         this.setData({
-          fontColor: '#000000'
+          fontColor: '#ffffff'
         })
       } else {
         this.setData({
-          fontColor: '#ffffff'
+          fontColor: '#000000'
         })
       }
     },
@@ -55,13 +58,30 @@ Component({
     btnType(){
       if(!this.props.type || this.props.type == "primary"){
         this.setData({
-          classData : "btn"
+          classData : "btn",
         })
-      }else if(this.props.type === "quick"){
+      } else if(this.props.type === "quick"){
         this.setData({
-          classData : "quickBtn"
+          classData : "quickBtn",
+          bgColor: "#e3e3e3",
+          fontColor: '#000000'
+        })
+      } else if (this.props.type === "default") {
+        this.setData({
+          classData : "btn",
+          bgColor: "#e3e3e3",
+          fontColor: '#000000'
         })
       }
+    },
+
+    handleDisabled(){
+      if(this.props.disabled === "true") {
+        this.setData({
+          disabledClass: "disabled"
+        })
+      }
+      console.log(this.data.disabledClass, ">>>>>>>>>>");
     }
   },
 });

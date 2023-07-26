@@ -4,7 +4,7 @@
     <view class="inner-container-top">
       <view class="inner-container-top-left">
         <view class="circle" style="background-color:{{color}}"></view>
-        <text class="text-title" style="color:{{color}}">
+        <text class="text-title text-all" style="color:{{color}}">
           {{title}} ({{percentage}}%)
         </text>
       </view>
@@ -13,7 +13,7 @@
       </view>
 
       <view class="inner-container-top-right">
-        <text class="text-content" style="color:{{textType}}">{{nominal}} VND</text>
+        <text class="text-content text-all" style="color:{{textType}}">{{nominal}} VND</text>
       </view>
     </view>
 
@@ -33,7 +33,7 @@
   </view>
 
   <view>
-    <image src="/images/right-arrow.svg" style="margin-top: 4rpx;" />
+    <image class="image-icon" src="/images/right-arrow.svg" style="margin-top: 4rpx;" />
   </view>
 
 </view>

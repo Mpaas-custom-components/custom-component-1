@@ -1,7 +1,4 @@
-text {
-  font-size: 28rpx;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 
 .outer-container {
   background-color: whitesmoke;
@@ -45,7 +42,7 @@ text {
   gap: 15rpx;
 }
 
-image {
+.image-icon {
   width: 30rpx;
   height: 30rpx;
 }
@@ -68,6 +65,13 @@ image {
 .text-title {
   color: salmon;
   font-weight: bold;
+  font-size: 28rpx;
+  font-family: Montserrat-Bold;
+}
+
+.text-content {
+  font-size: 26rpx;
+  font-family: Montserrat-Medium;
 }
 
 .percentage-bar-active {
