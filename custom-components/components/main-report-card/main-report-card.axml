@@ -58,3 +58,32 @@
     </view>
   </view>
 </view>
+
+<view a:if="{{ type == 'quaternary' }}" class="card-quaternary" ref="cardSecondaryRef" style="color: '{{color}}'; background-color:{{backgroundColor}}; width: {{width}}rpx; height: {{height}}rpx;" url="">
+  <view class="column-quaternary">
+    
+    <view class="{{theme == 'green' ? 'circle-icon-green-quaternary' : 'circle-icon-red-quaternary'}}">
+      <view class="circle-icon-inner-quaternary">
+        <image src="{{handleIcon}}" class="center-icon-quaternary" />
+      </view>
+    </view>
+
+  </view>
+  <view class="teks-container-quaternary">
+    <view class="column-value-quaternary"> 
+      <view>
+        <text class="value1-quaternary" >{{value1}}</text>
+      </view>
+      <view class="value34">
+        <text class="{{theme == 'green' ? 'value3-tertiary-green' :  'value3-tertiary-red' }}">{{value3}}</text>
+        <text class="value4-tertiary"> {{value4}}</text>
+      </view>
+    </view>
+    <text class="value2-quaternary" >{{value2}}</text>
+  </view>
+
+  <!-- <view class="teks-container-value34-quaternary">
+    <text class="{{theme == 'green' ? 'value3-tertiary-green' :  'value3-tertiary-red' }}">{{value3}}</text>
+    <text class="value4-tertiary">{{value4}}</text>
+  </view> -->
+</view>
