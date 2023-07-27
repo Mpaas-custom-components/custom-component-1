@@ -1,0 +1,95 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  padding: 0rpx 50rpx;
+}
+
+.heading {
+  background: orange;
+  min-height: 350rpx;
+  width: 100vw;
+  padding-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: larger;
+  font-weight: 800;
+}
+
+.card-banner {
+  display: flex;
+  justify-content: center;
+  width: 93%;
+  min-height: 170rpx;
+  background: white;
+  border-radius: 15rpx;
+  color: orange;
+  font-size: xx-large;
+  align-items: center;
+  font-weight: 900;
+  gap: 20rpx;
+  position: absolute;
+  top: 300rpx;
+  box-shadow: 2px 1px 5px rgb(168, 168, 168);
+}
+
+.card-banner text {
+  font-size: medium;
+  font-weight: 500;
+  flex-shrink: 0;
+  display: flex;
+  color: gray;
+  align-items: flex-end;
+  padding-top: 20rpx;
+}
+
+.main-content {
+  padding-top: 100rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 30rpx;
+}
+
+.report-card {
+  width: 700rpx;
+  border-bottom: 1rpx solid rgb(168, 168, 168);
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.title-conten {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.content {
+  color: rgb(97, 97, 97);
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+  color: rgb(162, 162, 162);
+  gap: 20rpx;
+}
+
+.greeting {
+  font-weight: 700;
+}
+
+.tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag text {
+  color: rgb(162, 162, 162);
+}

@@ -1,10 +1,11 @@
 {
   "subPackageBuildType": "shared",
   "pages": [
+    "pages/cash/cash",
     "pages/index/index"
   ],
   "window": {
-    "defaultTitle": "My App"
+    
   },
   "useDynamicPlugins": true
 }

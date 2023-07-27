@@ -1,4 +1,4 @@
-.container{
+.container {
   position: relative;
 }
 
@@ -18,20 +18,131 @@
   border: solid 1px gray;
   border-radius: 5px;
   width: 35vw;
-  height: 40vh;
   line-height: 40px;
   position: absolute;
   background: white;
 }
 
-.dropdown-item{
+.dropdown-item {
   text-align: start;
   padding-left: 5px;
   transition: .08s ease-out;
 }
 
-.dropdown-item:active{
+.dropdown-item:active {
   background: orange;
   color: white;
 }
 
+.content-filter {
+  display: flex;
+  gap: 10rpx;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.popupContainer{
+  position: relative;
+  max-height: 800rpx;
+  min-height: 300rpx;
+  padding: 0rpx 40rpx;
+  padding-top: 20rpx;
+  padding-bottom: 180rpx;
+}
+
+.popupContainer2{
+  position: relative;
+  max-height: 600rpx;
+  min-height: 300rpx;
+  padding: 0rpx 40rpx;
+  padding-top: 20rpx;
+  padding-bottom: 180rpx;
+}
+
+.radio {
+  display: block;
+  margin-bottom: 20rpx;
+}
+.radio-text {
+  line-height: 1.8;
+}
+
+.radio-group{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0rpx 20rpx;
+  margin: 20px 2rpx;
+}
+
+.radio-group2{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0rpx 20rpx;
+  margin: 20px 2rpx;
+}
+
+.radio{
+  display: flex;
+  background-color: rgb(231, 231, 231);
+  min-width: 205rpx;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  border-radius: 10rpx;
+  align-items: center;
+}
+
+.radio2{
+  display: flex;
+  background-color: transparent;
+  min-width: 205rpx;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  border-radius: 10rpx;
+  align-items: center;
+  border-bottom: 1rpx solid rgb(203, 203, 203);
+}
+
+.radio2:active{
+  background-color: rgba(255, 166, 0, 0.422);
+}
+
+radio{
+  border: none;
+  position: absolute;
+  width: 20rpx;
+  height: 70rpx;
+}
+
+.radio-text{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.radio-text2{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rpx;
+  margin: 0rpx 10rpx;
+  position: fixed;
+  bottom: 0;
+  width: 88vw;
+  background: white;
+  padding-top: 30rpx;
+  padding-bottom: 80rpx;
+}
+
+.title{
+  font-weight: bold;
+  font-size: large;
+}

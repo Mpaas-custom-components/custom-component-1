@@ -13,8 +13,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80rpx;
-  max-width: 250rpx;
+  height: 70rpx;
+  max-width: 225rpx;
+  min-width: 225rpx;
   width: max-content;
   padding: 0rpx 20rpx;
   font-family: GothamBold;
