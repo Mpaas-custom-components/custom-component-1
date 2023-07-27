@@ -1,0 +1,41 @@
+<view class="container-main">
+  <view class="section1">
+    <main-report-card 
+      type="quaternary" 
+      theme="green" 
+      color="" 
+      backgroundColor="" 
+      width="670" 
+      height="150"
+      value1="Outcome" 
+      value2="2.100.000" 
+      value3="4.78% (+0.20%)" 
+      value4=" vs Last Month" 
+      iconImage="https://cdn-icons-png.flaticon.com/512/2474/2474450.png"
+	  />
+  </view>
+
+  <view class="section2">
+    <dropdown-action items={{dataItems1}} />
+    <dropdown-action items={{dataItems2}} />
+    <dropdown-action items={{dataItems3}} />
+  </view>
+
+  <view class="section3">
+    <block a:for="{{allData}}" a:for-index="index" a:for-item="item">
+      <main-report-card
+        type="tertiary"
+        theme={{item.theme}}
+        color=""
+        backgroundColor="white"
+        width="700"
+        height=""
+        value1={{item.value1}}
+        value2={{item.value2}}
+        value3={{item.value3}}
+        url=""
+        iconImage={{item.icon}}
+      />
+    </block>
+  </view>
+</view>

@@ -1,11 +1,11 @@
 
-<view a:if="{{ type == "primary" }}" class="circle-button" onTap="handleTap" style="width:{{width}}rpx; height:{{height}}rpx; background-color:{{color}}">
+<view a:if="{{ type == 'primary' }}" class="circle-button" style="width:{{width}}rpx; height:{{height}}rpx; background-color:{{color}}">
   <view class="circle-button-inner">
     <image src="{{handleIcon}}" class="center-icon" />
   </view>
 </view>
 
-<view a:if="{{ type == "secondary" }}" class="circle-button-secondary" onTap="handleTap" style="width:{{width}}rpx; height:{{height}}rpx;">
+<view a:if="{{ type == 'secondary' }}" class="circle-button-secondary" style="width:{{width}}rpx; height:{{height}}rpx;">
   <view class="circle-button-inner-secondary">
     <image src="{{handleIcon}}" class="center-icon-secondary" />
   </view>

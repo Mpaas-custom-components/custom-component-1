@@ -1,0 +1,104 @@
+<view class="main">
+  <view>
+    <view class="marginini">    
+      <main-menu-card type="quaternary" theme="green" color="" backgroundColor="" width="630" height="120" value1="Outcome" value2="2.100.000" value3="4.78% (+0.20%)" value4=" vs Last Month" iconImage="https://cdn-icons-png.flaticon.com/512/2474/2474450.png"></main-menu-card>
+    </view>
+
+    <view class="marginini">    
+      <main-menu-card type="primary" theme="red" color="" backgroundColor="" width="" height="" value1= "Cash" value2="1.78%" value3="$ 6.899.00" value4="23/10/2023 12:45"></main-menu-card>
+    </view>
+    
+    <view class="container-main">
+      <view class="container-column">
+        
+        <main-menu-card type="secondary" theme="green" color="" backgroundColor="" width="" height="" value1="Income" value2="16.100.000" iconImage="https://cdn-icons-png.flaticon.com/512/2474/2474450.png"></main-menu-card>
+
+      </view>
+      <view class="container-column">
+        
+        <main-menu-card type="secondary" theme="red" color="" backgroundColor="" width="" height="" value1="Income" value2="16.100.000" iconImage="https://cdn-icons-png.flaticon.com/512/2474/2474450.png"></main-menu-card>
+
+      </view>
+    </view>
+    <main-menu-card type="secondary" theme="green" color="" backgroundColor="" width="" height="" value1="Income" value2="16.100.000" iconImage="https://cdn-icons-png.flaticon.com/512/2474/2474450.png"></main-menu-card>
+
+    <main-menu-card type="tertiary" theme="green" color="" backgroundColor="" width="" height="" value1="Withdraw" value2="23/11/2019 12:45" value3="+100.000 VND" iconImage="https://cdn-icons-png.flaticon.com/512/2474/2474450.png"></main-menu-card>
+  </view>
+
+  <view>
+    <button-bni size="small" type="primary" onTap="handleTap" disabled="true">button</button-bni>
+    <button-bni size="large" type="primary" onTap="handleTap">button</button-bni>
+    <button-bni size="medium" type="default" onTap="handleTap">button</button-bni>
+    <button-bni size="large" type="default" onTap="handleTap">button</button-bni>
+    <button-bni size="medium" type="quick" onTap="handleTap">button</button-bni>
+    <button-bni size="large" type="quick" onTap="handleTap" disabled="true">button</button-bni>
+  </view>
+  <view>
+    <action-icon 
+      type="primary" 
+      color="orange" 
+      width="" 
+      height="" 
+      iconImage="/images/bag-fill.svg"
+    />
+  
+    <action-icon 
+      type="secondary" 
+      width="" 
+      height="" 
+      iconImage="https://cdn-icons-png.flaticon.com/512/2474/2474450.png" 
+    />
+  </view>
+
+  <view>
+    <icon-menu-card 
+      width="200rpx" 
+      height="200rpx" 
+      color="white" 
+      images="/images/cash-coin.svg" 
+      name="Transfer" />
+  </view> 
+
+  <view>
+    <popular-activity-card-bni size="large" image="https://www.bni.co.id/Portals/1/xNews/uploads/2022/7/26/KK-BNI-26072022.png"></popular-activity-card-bni>
+    <popular-activity-card-bni size="medium" image="https://www.bni.co.id/Portals/1/BNI/Beranda/Promo/Images/PROMO-HUT-DOA.jpg"></popular-activity-card-bni>
+  </view>       
+   
+  <view class="section3">
+    <text class="section3-title">Popular Activity</text>
+    <view class="popular-activity-container">
+      <view class="column-1">
+        <popular-activity-card-bni size="large" image="https://www.bni.co.id/Portals/1/xNews/uploads/2022/7/26/KK-BNI-26072022.png"></popular-activity-card-bni>
+      </view>
+      <view class="column-2">
+        <popular-activity-card-bni size="medium" image="https://www.bni.co.id/Portals/1/BNI/Beranda/Promo/Images/PROMO-HUT-DOA.jpg"></popular-activity-card-bni>
+        <popular-activity-card-bni size="medium" image="https://cdnaz.cekaja.com/media/2023/02/Promo_Card_BNI-Casa_rev-@Opengraph.jpg"></popular-activity-card-bni>
+      </view>
+    </view>
+  </view>
+
+  <view class="section4-container">
+    <daily-information-card iconImage="/images/bag-fill-orange.svg" topicImage="https://cdnaz.cekaja.com/media/2023/02/Promo_Card_BNI-Casa_rev-@Opengraph.jpg" title="Buka Tabungan BNI Lewat CekAja, Bonusnya Berlipat Ganda!"></daily-information-card>
+  </view>
+
+  <view>
+    <slider-percentage
+      color='salmon'
+      title='Food dan Beverage'
+      percentage='56.97'
+      nominal='1.219.024'
+      backgroundColor='white'
+      textType="dark"
+    />
+  
+    <slider-percentage
+      color='#008AD8'
+      title='Food dan Snack'
+      percentage='18.43'
+      nominal='1.219.024'
+    />
+  
+    <slider-percentage color='teal' title='Pastry dan Bread' percentage='90.12' nominal='1.219.024' />
+  </view>
+</view>
+

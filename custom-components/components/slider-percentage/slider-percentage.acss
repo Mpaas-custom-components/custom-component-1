@@ -1,8 +1,3 @@
-text {
-  font-size: 28rpx;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .outer-container {
   background-color: whitesmoke;
   display: flex;
@@ -18,7 +13,7 @@ text {
 .container {
   width: 700rpx;
   height: 100rpx;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .inner-container-top {
@@ -45,7 +40,7 @@ text {
   gap: 15rpx;
 }
 
-image {
+.image-icon {
   width: 30rpx;
   height: 30rpx;
 }
@@ -68,6 +63,13 @@ image {
 .text-title {
   color: salmon;
   font-weight: bold;
+  font-size: 25rpx;
+  font-family: Montserrat-Bold;
+}
+
+.text-content {
+  font-size: 25rpx;
+  font-family: Montserrat-Medium;
 }
 
 .percentage-bar-active {
@@ -82,5 +84,5 @@ image {
   background-color: lightgray;
   width: 100%;
   height: 20rpx;
-  border-radius: 20rpx;
+  border-radius: 20rpx;
 }

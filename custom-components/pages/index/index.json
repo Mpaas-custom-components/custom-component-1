@@ -1,4 +1,11 @@
 {
   "usingComponents": {
+    "main-menu-card" : "/components/main-report-card/main-report-card",
+    "button-bni" : "/components/button-bni/button-bni",
+    "action-icon" : "/components/action-icon/action-icon",
+    "icon-menu-card" : "/components/icon-menu-card/icon-menu-card",
+    "popular-activity-card-bni": "/components/popular-activity-card-bni/popular-activity-card-bni",
+    "daily-information-card" : "/components/daily-information-card/daily-information-card",
+    "slider-percentage" : "/components/slider-percentage/slider-percentage"
   }
 }

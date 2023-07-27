@@ -18,10 +18,6 @@ Component({
   didUnmount() {},
   methods: {
 
-    handleTap() {
-      console.log(this.props.url, ">>> url button-icon-1 <<<");
-    },
-
     handleIcon() {
 
       let iconImage = ""

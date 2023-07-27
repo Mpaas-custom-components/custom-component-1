@@ -1,37 +1,40 @@
 .btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   height: 100rpx;
-  font-family: GothamBold;
+  font-family: Montserrat-Bold;
   font-size: medium;
   border-radius: 50rpx;
-  box-shadow: 0px 0px 1px gray;
+  border: none;
 }
 
 .quickBtn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70rpx;
-  max-width: 225rpx;
-  min-width: 225rpx;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important; 
+  height: 80rpx;
+  max-width: 250rpx;
   width: max-content;
   padding: 0rpx 20rpx;
-  font-family: GothamBold;
+  font-family: Montserrat-Bold;
   font-size: medium;
   border-radius: 10rpx;
-  box-shadow: 0px 0px 1px gray;
+  /* border: none; */
 }
 
 .large{
-  width: 100%
+  width: 100% !important
 }
 
 .medium{
-  width: 50%
+  width: 50% !important
 }
 
 .small{
-  width: 25%
+  width: 25% !important
+}
+
+.disabled {
+  opacity: 60%;
 }

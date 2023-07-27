@@ -1,10 +1,6 @@
 <view class="menu-icon-card" style="width:{{width ? width : 'auto'}};height:{{height ? height : 'auto'}};">
   <image  src="{{images}}" class="menu-icon" />
-<<<<<<< HEAD
-  <text class="menu-name" style="color:{{color ? color : 'black'}};">{{name}}</text>
-=======
   <view class="text-container">
     <text class="menu-name" style="font-size:{{fontSize ? fontSize : '25rpx'}};color:{{color ? color : 'black'}};">{{name}}</text>
   </view>
->>>>>>> ef60399e68a8296fb1a03f68d5ed27defb590c16
 </view>

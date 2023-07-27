@@ -1,22 +1,22 @@
 .popular-card{
-  background-size: cover;
+  background-size: contain;
+  background-position:center;
+  background-repeat:no-repeat;
 }
-.medium{
+.medium-pacb{
+  min-width: 200rpx;
+  min-height: 150rpx;
   width: 100%;
   height: 50%;
-  background-position: 170rpx -40rpx ;
-  background-repeat: no-repeat;
-  border: 1px solid #000;
   display: flex;
   justify-content: flex-start;
 }
 
-.large{
+.large-pacb{
+  min-width: 200rpx;
+  min-height: 200rpx;
   width:100%;
   height: 100%;
-  background-position: -170rpx 0rpx ;
-  background-repeat: no-repeat;
-  border: 1px solid #000;
   display: flex;
   justify-content: flex-end;
 }

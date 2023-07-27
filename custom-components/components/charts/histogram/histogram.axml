@@ -1,0 +1,9 @@
+<view class="comp-histogram-chart">
+  <canvas     
+  id="comp-histogram-chart-{{$id}}"
+  height="{{height}}"
+  width="{{width}}"
+  onTouchStart="touchStart"
+  onTouchMove="touchMove"
+  onTouchEnd="touchEnd"/>
+</view>

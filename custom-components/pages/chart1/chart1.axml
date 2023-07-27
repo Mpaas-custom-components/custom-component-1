@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="box-container">
+    <view class="chart-box">
+      <histogram
+        dataChart="{{histo}}"
+        adjust="dodge"
+        style="{{dodge.style}}"
+        size="{{dodge.size}}"
+        color="{{dodge.color}}"
+        legend="{{dodge.legend}}"
+      />
+    </view>
+  </view>
+</view>
