@@ -3,16 +3,18 @@
   height: 100%;
   padding: 10rpx;
   margin: auto;
-
 }
 
 .marginini {
   margin: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-main {
   width: 680rpx;
-  height: 100px;
+  height: 200rpx;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   border-radius: 10px; 

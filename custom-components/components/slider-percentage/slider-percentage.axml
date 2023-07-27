@@ -9,11 +9,12 @@
         </text>
       </view>
 
-      <view class="inner-container-top-middle">
-      </view>
+      <!--<view class="inner-container-top-middle"></view> -->
 
       <view class="inner-container-top-right">
-        <text class="text-content text-all" style="color:{{textType}}">{{nominal}} VND</text>
+        <text class="text-content text-all" style="color:{{textType}}">
+          {{nominal}} VND
+        </text>
       </view>
     </view>
 
