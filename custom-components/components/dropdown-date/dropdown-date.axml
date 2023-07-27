@@ -1,5 +1,7 @@
 <view class="container">
-  <dropdown items={{dayOptions}} defaultValue={{calendar.day}} />
-  <dropdown items={{monthOptions}} defaultValue={{calendar.month}} />
-  <dropdown items={{yearOptions}} defaultValue={{calendar.year}} />
+  <picker mode="selector" range="{{array}}" bindchange="onPickerChange">
+    <view class="picker">
+     <button-bni> {{selectedValue}}</button-bni>
+    </view>
+  </picker>
 </view>

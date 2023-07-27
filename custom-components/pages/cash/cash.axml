@@ -1,0 +1,56 @@
+<view class="main-container">
+  <view class="heading">
+    Cash
+    <view class="card-banner">
+      + 100.000
+      <text>VND</text>
+    </view>
+  </view>
+  <view class="main-content">
+    <view class="report-card">
+      <view class="title-content">
+        From
+      </view>
+      <view class="content">
+        <text>Account Number :</text>
+        <text>
+          10147089999
+        </text>
+      </view>
+    </view>
+    <view class="report-card">
+      <view class="title-content">
+        To
+      </view>
+      <view class="content">
+        <text>Account Number :</text>
+        <text>
+          10147082020
+        </text>
+      </view>
+    </view>
+    <view class="report-card">
+      <view class="title-content">
+        Trasnfer Info
+      </view>
+      <view class="content">
+        <text>Transaction Amount :</text>
+        <text>
+          100.000 VND
+        </text>
+      </view>
+    </view>
+    <view class="message-card">
+      <view class="message-content">
+        <text>Message :</text>
+        <text class="greeting">
+          Happy birthday
+        </text>
+      </view>
+    </view>
+    <view class="tag">
+      <text>Tag : </text>
+      <button-bni type="quick" color="#dedede">Saving Routine ></button-bni>
+    </view>
+  </view>
+</view>

@@ -1,6 +1,8 @@
 {
   "component": true,
   "usingComponents": {
-  "button-bni" : "/components/button-bni/button-bni"
+  "button-bni" : "/components/button-bni/button-bni",
+  "popup": "antd-mini/es/Popup/index",
+  "form-selector": "antd-mini/es/Form/FormSelector/index"
   }
 }
