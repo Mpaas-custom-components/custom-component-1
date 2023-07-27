@@ -1,15 +1,15 @@
 <view a:if="{{ type == 'primary' }}" class="card" style="width:{{width}}rpx; height:{{height}}rpx; background-color:{{backgroundColor}}; color:{{color}}" url="">
   <!-- Baris 1 -->
-  <view class="row">
+  <view class="row-1">
     <view class="column">
       <text class="text-main">{{value1}}</text>
     </view>
     <view class="column">
-      <text class="text-persen">{{value2}}</text>
+      <text class="{{theme == 'green' ? 'text-persen-green' : 'text-persen-red'}}">{{value2}}</text>
     </view>
   </view>
   <!-- Baris 2 -->
-  <view class="row">
+  <view class="row-2">
     <view class="column">
       <text class="text-money">{{value3}}</text>
     </view>
@@ -36,7 +36,7 @@
 </view>
 
 
-<view a:if="{{ type == 'tertiary' }}" class="card-tertiary" style="color: '{{color}}'; background-color:{{backgroundColor}}; width: {{width}}; height: {{height}};" url="">
+<view a:if="{{ type == 'tertiary' }}" class="card-tertiary" style="color: '{{color}}'; background-color:{{backgroundColor}}; width: {{width}}rpx; height: {{height}}rpx;" url="">
   <view class="column-tertiary">
     <view class="icon-tertiary">
       <view class="icon-inner-tertiary">
@@ -87,3 +87,4 @@
     <text class="value4-tertiary">{{value4}}</text>
   </view> -->
 </view>
+

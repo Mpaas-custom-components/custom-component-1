@@ -3,7 +3,10 @@
     <view class="marginini">    
       <main-menu-card type="quaternary" theme="green" color="" backgroundColor="" width="630" height="120" value1="Outcome" value2="2.100.000" value3="4.78% (+0.20%)" value4=" vs Last Month" iconImage="https://cdn-icons-png.flaticon.com/512/2474/2474450.png"></main-menu-card>
     </view>
-    <main-menu-card type="primary" color="" backgroundColor="" width="" height="" value1= "Cash" value2="1.78%" value3="$ 6.899.00" value4="23/10/2023 12:45"></main-menu-card>
+
+    <view class="marginini">    
+      <main-menu-card type="primary" theme="red" color="" backgroundColor="" width="" height="" value1= "Cash" value2="1.78%" value3="$ 6.899.00" value4="23/10/2023 12:45"></main-menu-card>
+    </view>
     
     <view class="container-main">
       <view class="container-column">
@@ -98,3 +101,4 @@
     <slider-percentage color='teal' title='Pastry dan Bread' percentage='90.12' nominal='1.219.024' />
   </view>
 </view>
+

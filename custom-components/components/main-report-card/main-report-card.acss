@@ -2,17 +2,28 @@
   width: 670rpx;
   height: 110rpx;
   background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 10px;
   padding: 10px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 10rpx;
 }
 
-.row {
+.row-1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 10px;
+  align-items: center;
+}
+
+.row-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -29,18 +40,24 @@
 
 .text-main {
   font-family: Montserrat-Bold;
-  font-size: 40rpx;
+  font-size: 30rpx;
 }
 
-.text-persen {
+.text-persen-green {
   font-family: Montserrat-Medium;
-  font-size: 28rpx;
+  font-size: 22.5rpx;
   color: rgb(27, 199, 0)
+}
+
+.text-persen-red {
+  font-family: Montserrat-Medium;
+  font-size: 22.5rpx;
+  color: rgb(248, 8, 8)
 }
 
 .text-money {
   font-family: Montserrat-Bold;
-  font-size: 30rpx;
+  font-size: 28rpx;
   color: rgb(27, 199, 0);
 }
 
@@ -162,8 +179,8 @@
 }
 
 .icon-tertiary {
-  width: 100rpx;
-  height: 100rpx;
+  width: 80rpx;
+  height: 80rpx;
   min-height: 50rpx;
   background-color: rgba(145, 145, 145, 0.2);
   display: flex;
@@ -190,7 +207,8 @@
   flex-direction: column;
   justify-content: center;
   padding: 5rpx;
-  margin-left: -35%;
+  margin-left: -58%;
+  gap: 10rpx;
 }
 
 .value1-tertiary {
