@@ -1,6 +1,6 @@
 {
   "name": "@mpaas-test-component/cust-components-mpaas",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -11,5 +11,8 @@
     "mini-program"
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@antv/my-f2": "^1.1.6"
+  }
 }

@@ -6,6 +6,10 @@
 
 }
 
+.marginini {
+  margin: 20rpx;
+}
+
 .container-main {
   width: 680rpx;
   height: 100px;
