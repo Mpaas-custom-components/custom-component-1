@@ -2,8 +2,8 @@
   "subPackageBuildType": "shared",
   "pages": [
     "pages/index/index",
-    "pages/experiment/experiment",
-    "pages/chart1/chart1"
+    "pages/chart1/chart1",
+    "pages/experiment/experiment"
   ],
   "window": {
     "defaultTitle": "My App"

@@ -17,14 +17,19 @@ function render (chart, props, width, height){
   chart.interval().position('month*value').adjust(adjust).color('name',color).style(style).size(size||20)
   legend?chart.legend(legend):chart.legend(false)
 
-chart.scrollBar({
-  mode: 'x',
-  xStyle: {
-    offsetX: 3,
-    offsetY: 1.5,
-    range: [0.1, 0.3]
-  },
+  chart.scrollBar({
+    mode: 'x',
+    xStyle: {
+      offsetX: 3, 
+      offsetY: 1.5, 
+      range: [0.1, 0.3], 
+    },
   });
+
+  chart.axis('month', {
+    scrollX: true, 
+  });
+
 
   chart.changeSize(width, height);
 }

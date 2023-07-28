@@ -6,6 +6,7 @@
     "icon-menu-card" : "/components/icon-menu-card/icon-menu-card",
     "popular-activity-card-bni": "/components/popular-activity-card-bni/popular-activity-card-bni",
     "daily-information-card" : "/components/daily-information-card/daily-information-card",
-    "slider-percentage" : "/components/slider-percentage/slider-percentage"
+    "slider-percentage" : "/components/slider-percentage/slider-percentage",
+    "drop-down-action" : "/components/dropdown-action/dropdown-action"
   }
 }
