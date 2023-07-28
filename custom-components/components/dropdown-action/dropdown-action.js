@@ -1,36 +1,83 @@
+
+
 Component({
   mixins: [],
   data: {
-    isDropdownOpen: false,
-    valueData: ""
+    position: '',
+    basicVisible: false,
+    animation: true,
+    scrollVisible: false,
+    closeVisible: false,
+    valueData: "",
+    months: [
+      { month: 'January', number: 1 },
+      { month: 'February', number: 2 },
+      { month: 'March', number: 3 },
+      { month: 'April', number: 4 },
+      { month: 'May', number: 5 },
+      { month: 'June', number: 6 },
+      { month: 'July', number: 7 },
+      { month: 'August', number: 8 },
+      { month: 'September', number: 9 },
+      { month: 'October', number: 10 },
+      { month: 'November', number: 11 },
+      { month: 'December', number: 12 },
+    ],
+    years: []
   },
   props: {
   },
   didMount() {
-    console.log(this.props.items)
+    this.getYearsFrom(1945)
+    console.log(this.data.years)
   },
   didUpdate() {},
   didUnmount() {},
   methods: {
-    toggleDropDown() {
+    handlePopupShow() {
       this.setData({
-        isDropdownOpen: !this.data.isDropdownOpen
+        scrollVisible: true
       })
     },
 
-    onChange(e) {
-      console.log(e, "child")
+    handlePopupClose() {
       this.setData({
-        valueData: e.target.dataset.value,
-        isDropdownOpen: !this.data.isDropdownOpen
-      })
-
-      this.$page.handleValue(this.data.valueData)
+        basicVisible: false,
+        scrollVisible: false,
+        closeVisible: false,
+      });
     },
 
-    onclick(){
+    handleRef(ref) {
+      this.form.addItem(ref);
+    },
+
+    onSubmit(e) {
       this.setData({
-        isDropdownOpen: !this.data.isDropdownOpen
+        basicVisible: false,
+        scrollVisible: false,
+        closeVisible: false,
+      })
+    },
+    onReset(e) {
+      console.log('onReset', e);
+    },
+    radioChange(e) {
+      this.setData({
+        valueData: e.detail.value
+      })
+    },
+
+    getYearsFrom(startYear) {
+      const currentYear = new Date().getFullYear();
+      const years = [];
+    
+      for (let year = startYear; year <= currentYear; year++) {
+        years.push(year);
+      }
+    
+      this.setData({
+        years: years
       })
     }
   },

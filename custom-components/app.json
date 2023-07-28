@@ -2,11 +2,17 @@
   "subPackageBuildType": "shared",
   "pages": [
     "pages/index/index",
+<<<<<<< HEAD
     "pages/chart1/chart1",
     "pages/experiment/experiment"
+=======
+    "pages/experiment/experiment",
+    "pages/cash/cash",
+    "pages/chart1/chart1"
+>>>>>>> 2077980727cd0c4407f9a481c8889d052b97e047
   ],
   "window": {
-    "defaultTitle": "My App"
+    
   },
   "useDynamicPlugins": true
 }

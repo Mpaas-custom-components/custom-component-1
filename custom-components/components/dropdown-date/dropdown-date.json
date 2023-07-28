@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "dropdown" : "/components/dropdown-action/dropdown-action"
+    "dropdown" : "/components/dropdown-action/dropdown-action",
+    "button-bni" : "/components/button-bni/button-bni"
   }
 }
