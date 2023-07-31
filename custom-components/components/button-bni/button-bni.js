@@ -69,8 +69,8 @@ Component({
       } else if (this.props.type === "default") {
         this.setData({
           classData : "btn",
-          bgColor: "#e3e3e3",
-          fontColor: '#000000'
+          bgColor: "#FFF",
+          fontColor: '#ffa500'
         })
       }
     },

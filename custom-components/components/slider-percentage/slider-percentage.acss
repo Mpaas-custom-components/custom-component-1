@@ -1,10 +1,11 @@
 .outer-container {
+  width: calc(100% - 50rpx);
   background-color: whitesmoke;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 30rpx 25rpx;
+  padding: 30rpx 10rpx;
   border-bottom-width: 1rpx;
   border-bottom-color: lightgray;
   border-bottom-style: solid;
@@ -21,6 +22,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  white-space: nowrap;
 }
 
 .inner-container-top-left {
@@ -70,6 +72,7 @@
 .text-content {
   font-size: 25rpx;
   font-family: Montserrat-Medium;
+  white-space: nowrap;
 }
 
 .percentage-bar-active {

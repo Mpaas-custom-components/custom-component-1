@@ -124,8 +124,8 @@ radio{
   display: flex;
   justify-content: center;
   width: 100%;
-  font-size: x-large;
-  font-weight: 900;
+  font-size: 42rpx;
+  font-family: Montserrat-Bold;
 }
 
 .btn-container{
