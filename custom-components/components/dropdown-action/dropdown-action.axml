@@ -2,7 +2,7 @@
   {{valueData ? valueData : defaultValue}} ⌵
 </button>
 
-<view a:if="{{ type == "selector" }}">
+<view a:if="{{ type == 'selector' }}">
   <popup visible="{{scrollVisible}}" position="bottom" animation="{{animation}}" onClose="handlePopupClose">
     <scroll-view scroll-y class="popupContainer">
         <view class="popupContent">
@@ -27,7 +27,7 @@
   </popup>
 </view>
 
-<view a:if="{{ type == "dateMonth" }}">
+<view a:if="{{ type == 'dateMonth' }}">
   <popup visible="{{scrollVisible}}" position="bottom" animation="{{animation}}" onClose="handlePopupClose">
     <scroll-view scroll-y class="popupContainer2">
         <view class="popupContent">
@@ -52,7 +52,7 @@
   </popup>
 </view>
 
-<view a:if="{{ type == "dateYear" }}">
+<view a:if="{{ type == 'dateYear' }}">
   <popup visible="{{scrollVisible}}" position="bottom" animation="{{animation}}" onClose="handlePopupClose">
     <scroll-view scroll-y class="popupContainer2">
         <view class="popupContent">
