@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "main-report-card" : "/components/main-report-card/main-report-card"
+    "main-report-card" : "/components/main-report-card/main-report-card",
+    "dropdown-action" : "/components/dropdown-action/dropdown-action"
   }
 }
