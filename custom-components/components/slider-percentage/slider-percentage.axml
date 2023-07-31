@@ -34,7 +34,9 @@
   </view>
 
   <view>
-    <image class="image-icon" src="/images/right-arrow.svg" style="margin-top: 4rpx;" />
+    <text style="font-weight:500; font-family:Montserrat-Medium">
+      >
+    </text>
   </view>
 
 </view>
