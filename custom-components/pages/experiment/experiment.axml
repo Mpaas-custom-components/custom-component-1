@@ -16,9 +16,9 @@
   </view>
 
   <view class="section2">
-    <dropdown-action items={{dataItems1}} />
-    <dropdown-action items={{dataItems2}} />
-    <dropdown-action items={{dataItems3}} />
+    <dropdown-action type="dateYear" items={{dataItems1}} />
+    <dropdown-action type="dateMonth" items={{dataItems2}} />
+    <dropdown-action type="selector" items={{dataItems3}} />
   </view>
 
   <view class="section3">
@@ -37,5 +37,6 @@
         iconImage={{item.icon}}
       />
     </block>
+
   </view>
 </view>
