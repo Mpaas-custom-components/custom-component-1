@@ -29,18 +29,18 @@
 
 <view a:if="{{ type == "dateMonth" }}">
   <popup visible="{{scrollVisible}}" position="bottom" animation="{{animation}}" onClose="handlePopupClose">
-    <scroll-view scroll-y class="popupContainer">
+    <scroll-view scroll-y class="popupContainer2">
         <view class="popupContent">
           <text class="title">{{title}}</text>
-          <radio-group class="radio-group" onChange="radioChange" name="{{name}}">
-            <label a:for="{{months}}" a:for-item="date" class="radio" key="label-{{index}}">
+          <radio-group class="radio-group2" onChange="radioChange" name="{{name}}">
+            <label a:for="{{months}}" a:for-item="date" class="radio2" key="label-{{index}}">
               <radio
                 color="orange"
                 value="{{date.month}}"
                 checked="{{date.checked}}"
                 disabled="{{date.disabled}}"
               />
-              <text class="radio-text">{{date.month}}</text>
+              <text class="radio-text2">{{date.month}}</text>
             </label>
           </radio-group>
         </view>

@@ -23,13 +23,23 @@ Component({
       { month: 'November', number: 11 },
       { month: 'December', number: 12 },
     ],
-    years: []
+    years: [],
   },
   props: {
   },
   didMount() {
     this.getYearsFrom(1945)
-    console.log(this.data.years)
+    if(this.props.type === "dateMonth"){
+      this.getCurrentMonth()
+    }else if(this.props.type === "dateYear"){
+      this.setData({
+        valueData: new Date().getFullYear()
+      })
+    }else{
+      this.setData({
+        valueData: "Filter"
+      })
+    }
   },
   didUpdate() {},
   didUnmount() {},
@@ -79,6 +89,19 @@ Component({
       this.setData({
         years: years
       })
+    },
+
+    getCurrentMonth(){
+      const month = new Date().getMonth().toString()
+      
+      this.data.months.map((el) => {
+        if(el.number - 1 == month){
+          this.setData({
+            valueData : el.month
+          })
+        }
+      })
     }
   },
+  
 });

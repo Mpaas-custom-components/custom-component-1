@@ -55,8 +55,8 @@
   max-height: 600rpx;
   min-height: 300rpx;
   padding: 0rpx 40rpx;
-  padding-top: 20rpx;
   padding-bottom: 180rpx;
+  margin-top: 40rpx;
 }
 
 .radio {

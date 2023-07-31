@@ -59,7 +59,6 @@ Component({
       const query = my.createSelectorQuery();
       query.select('.card-secondary').boundingClientRect();
       query.exec(res => {
-        console.log(res[0] ? res[0].width : 0, "<<<< WIDTH");
         let cardWidth = res[0] ? res[0].width : 0;
 
         // const newFontSizeValue1 = Math.max(Math.min(cardWidth / 20, 28), 18); 
