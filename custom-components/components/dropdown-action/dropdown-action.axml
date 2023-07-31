@@ -20,7 +20,7 @@
           </radio-group>
         </view>
         <view class="btn-container">
-          <button-bni size="medium" formType="reset" color="#FFFFFF">Reset</button-bni>
+          <button-bni type="default" size="medium" formType="reset" color="#FFFFFF">Reset</button-bni>
           <button-bni size="medium" onTap="onSubmit" >Submit</button-bni>
         </view>
     </scroll-view>
@@ -45,7 +45,7 @@
           </radio-group>
         </view>
         <view class="btn-container">
-          <button-bni size="medium" formType="reset" color="#FFFFFF">Reset</button-bni>
+          <button-bni type="default" size="medium" formType="reset" color="#FFFFFFFFFFFF">Reset</button-bni>
           <button-bni size="medium" onTap="onSubmit" >Submit</button-bni>
         </view>
     </scroll-view>
@@ -67,7 +67,7 @@
           </radio-group>
         </view>
         <view class="btn-container">
-          <button-bni size="medium" formType="reset" color="#FFFFFF">Reset</button-bni>
+          <button-bni type="default" size="medium" formType="reset" color="#FFFFFF">Reset</button-bni>
           <button-bni size="medium" onTap="onSubmit" >Submit</button-bni>
         </view>
     </scroll-view>
