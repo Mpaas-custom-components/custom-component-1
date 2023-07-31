@@ -1,7 +1,9 @@
 <view class="main">
   <view>
     <view class="marginini">
-      <drop-down-action></drop-down-action>    
+      <form onSubmit="handleTap">
+        <drop-down-action type="selector" items={{items}} title="title test" name="name test" defaultValue="Filter"></drop-down-action>    
+      </form>
     </view>
     
     <view class="marginini">    
