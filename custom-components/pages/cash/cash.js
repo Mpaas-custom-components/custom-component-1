@@ -1,4 +1,5 @@
 Page({
-  data: {},
+  data: {
+  },
   onLoad() {},
 });

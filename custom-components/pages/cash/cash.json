@@ -1,6 +1,5 @@
 {
   "usingComponents": {
-    "button-bni" : "/components/button-bni/button-bni"
-  },
+  "dropdown-action" : "/components/dropdown-action/dropdown-action"  },
   "transparentTitle": "always"
 }

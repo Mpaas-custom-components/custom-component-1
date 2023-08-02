@@ -1,75 +1,130 @@
-<button class="dropdown-toggle" onTap="handlePopupShow">
+<button a:if="{{ btnType === "dropdown" }}" class="dropdown-toggle" onTap="handlePopupShow">
   {{valueData ? valueData : defaultValue}} ⌵
 </button>
 
-<view a:if="{{ type == 'selector' }}">
-  <popup visible="{{scrollVisible}}" position="bottom" animation="{{animation}}" onClose="handlePopupClose">
+<button a:if="{{ btnType === "tag" }}" class="tag-toggle {{valueData ? "layout" : ""}}" onTap="handlePopupShow">
+  {{valueData ? valueData : defaultValue}} &rarr;
+</button>
+
+<view a:if="{{ type == "selector" }}">
+  <popup
+    visible="{{scrollVisible}}"
+    position="bottom"
+    animation="{{animation}}"
+    onClose="handlePopupClose"
+  >
     <scroll-view scroll-y class="popupContainer">
-        <view class="popupContent">
-          <text class="title">{{title}}</text>
-          <radio-group class="radio-group" onChange="radioChange" name="{{name}}">
-            <label a:for="{{items}}" class="radio" key="label-{{index}}">
-              <radio
-                color="orange"
-                value="{{item.name}}"
-                checked="{{item.checked}}"
-                disabled="{{item.disabled}}"
-              />
-              <text class="radio-text">{{item.value}}</text>
-            </label>
-          </radio-group>
-        </view>
-        <view class="btn-container">
-          <button-bni type="default" size="medium" formType="reset" color="#FFFFFF">Reset</button-bni>
-          <button-bni size="medium" onTap="onSubmit" >Submit</button-bni>
-        </view>
+      <view class="popupContent">
+        <text class="title">{{title}}</text>
+        <radio-group class="radio-group" onChange="radioChange" name="{{name}}">
+          <label a:for="{{items}}" a:for-item="item" class="radio" key="label-{{index}}">
+            <radio
+              color="orange"
+              value="{{item.name}}"
+              checked="{{item.checked}}"
+              disabled="{{item.disabled}}"
+            />
+            <text class="radio-text">{{item.value}}</text>
+          </label>
+        </radio-group>
+      </view>
+      <view class="btn-container">
+        <button-bni size="medium" formType="reset" color="#FFFFFF">Reset</button-bni>
+        <button-bni size="medium" onTap="onSubmit">Submit</button-bni>
+      </view>
     </scroll-view>
   </popup>
 </view>
 
-<view a:if="{{ type == 'dateMonth' }}">
-  <popup visible="{{scrollVisible}}" position="bottom" animation="{{animation}}" onClose="handlePopupClose">
+<view a:if="{{ type == "dateMonth" }}">
+  <popup
+    visible="{{scrollVisible}}"
+    position="bottom"
+    animation="{{animation}}"
+    onClose="handlePopupClose"
+  >
     <scroll-view scroll-y class="popupContainer2">
-        <view class="popupContent">
-          <text class="title">{{title}}</text>
-          <radio-group class="radio-group2" onChange="radioChange" name="{{name}}">
-            <label a:for="{{months}}" a:for-item="date" class="radio2" key="label-{{index}}">
-              <radio
-                color="orange"
-                value="{{date.month}}"
-                checked="{{date.checked}}"
-                disabled="{{date.disabled}}"
-              />
-              <text class="radio-text2">{{date.month}}</text>
-            </label>
-          </radio-group>
-        </view>
-        <view class="btn-container">
-          <button-bni type="default" size="medium" formType="reset" color="#FFFFFFFFFFFF">Reset</button-bni>
-          <button-bni size="medium" onTap="onSubmit" >Submit</button-bni>
-        </view>
+      <view class="popupContent">
+        <text class="title">{{title}}</text>
+        <radio-group class="radio-group2" onChange="radioChange" name="{{name}}">
+          <label a:for="{{months}}" a:for-item="date" class="radio2" key="label-{{index}}">
+            <radio
+              color="orange"
+              value="{{date.month}}"
+              checked="{{date.checked}}"
+              disabled="{{date.disabled}}"
+            />
+            <text class="radio-text2">{{date.month}}</text>
+          </label>
+        </radio-group>
+      </view>
+      <view class="btn-container">
+        <button-bni size="medium" formType="reset" color="#FFFFFF">Reset</button-bni>
+        <button-bni size="medium" onTap="onSubmit">Submit</button-bni>
+      </view>
     </scroll-view>
   </popup>
 </view>
 
-<view a:if="{{ type == 'dateYear' }}">
-  <popup visible="{{scrollVisible}}" position="bottom" animation="{{animation}}" onClose="handlePopupClose">
-    <scroll-view scroll-y class="popupContainer2">
-        <view class="popupContent">
-          <radio-group class="radio-group2" onChange="radioChange" name="{{name}}">
-            <label a:for="{{years}}" a:for-item="date" class="radio2" key="label-{{index}}">
-              <radio
-                color="orange"
-                value="{{date}}"
-              />
-              <text class="radio-text2">{{date}}</text>
-            </label>
-          </radio-group>
-        </view>
-        <view class="btn-container">
-          <button-bni type="default" size="medium" formType="reset" color="#FFFFFF">Reset</button-bni>
-          <button-bni size="medium" onTap="onSubmit" >Submit</button-bni>
-        </view>
+<view a:if="{{ type == "tagInput" }}">
+  <popup
+    visible="{{scrollVisible}}"
+    position="bottom"
+    animation="{{animation}}"
+    onClose="handlePopupClose"
+  >
+    <view class="tagContent">
+      <text class="title">
+        <image class="svg" src="../../images/tag.svg" /> Tag
+      </text>
+      <view class="input">
+        <input placeholder="Input Tag..." onInput="onChangeInput"/>
+      </view>
+      <text class="title"> my Tag</text>
+    </view>
+    <scroll-view scroll-y class="popupContainer">
+      <view class="popupContent">
+        <radio-group class="radio-group" onChange="tagChange" name="{{name}}">
+          <label a:for="{{tagData}}" a:for-item="item" class="radio" key="label-{{index}}">
+            <radio
+              color="orange"
+              value="{{item.name}}"
+              checked="{{item.checked}}"
+              disabled="{{item.disabled}}"
+            />
+            <text class="radio-text">{{item.value}}</text>
+          </label>
+        </radio-group>
+      </view>
+      <view class="btn-container">
+        <button-bni size="medium" type="default" formType="reset" color="#FFFFFF">Reset</button-bni>
+        <button-bni size="medium" onTap="onSaveTag">Save</button-bni>
+      </view>
     </scroll-view>
   </popup>
 </view>
+
+<view a:if="{{ type == "dateYear" }}">
+  <popup
+    visible="{{scrollVisible}}"
+    position="bottom"
+    animation="{{animation}}"
+    onClose="handlePopupClose"
+  >
+    <scroll-view scroll-y class="popupContainer2">
+      <view class="popupContent">
+        <radio-group class="radio-group2" onChange="radioChange" name="{{name}}">
+          <label a:for="{{years}}" a:for-item="date" class="radio2" key="label-{{index}}">
+            <radio color="orange" value="{{date}}" />
+            <text class="radio-text2">{{date}}</text>
+          </label>
+        </radio-group>
+      </view>
+      <view class="btn-container">
+        <button-bni size="medium"  formType="reset" type="default">Reset</button-bni>
+        <button-bni size="medium" onTap="onSubmit" type="primary">Submit</button-bni>
+      </view>
+    </scroll-view>
+  </popup>
+</view>
+
