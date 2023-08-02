@@ -1,4 +1,5 @@
 function scale(obj) {
+  console.log(obj, "OBBJJJJJJJJJJJJJJJJJJJJJJJJJjj");
   let key = ['range', 'tickCount', 'max', 'min', 'mask', 'type', 'nice', 'ticks'];
   let res = {};
   for(let i = 0; i < key.length; i++) {
@@ -7,6 +8,7 @@ function scale(obj) {
       res[k] = obj[k];
     }
   }
+  console.log(res, "RESSSSSSSSSSSSSSSSSSSs");
   return res;
 }
 

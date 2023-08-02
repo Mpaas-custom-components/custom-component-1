@@ -1,5 +1,11 @@
 <view class="main">
   <view>
+    <view class="marginini">
+      <form onSubmit="handleTap">
+        <drop-down-action type="selector" items={{items}} title="title test" name="name test" defaultValue="Filter"></drop-down-action>    
+      </form>
+    </view>
+    
     <view class="marginini">    
       <main-menu-card type="quaternary" theme="green" color="" backgroundColor="" width="630" height="120" value1="Outcome" value2="2.100.000" value3="4.78% (+0.20%)" value4=" vs Last Month" iconImage="https://cdn-icons-png.flaticon.com/512/2474/2474450.png"></main-menu-card>
     </view>
@@ -100,5 +106,8 @@
   
     <slider-percentage color='teal' title='Pastry dan Bread' percentage='90.12' nominal='1.219.024' />
   </view>
+
+
+
 </view>
 

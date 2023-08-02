@@ -40,6 +40,21 @@ const histo = [
     month: 'Aug.',
     value: 35.6,
   },
+  {
+    name: 'London',
+    month: 'Aug.',
+    value: 35.6,
+  },
+  {
+    name: 'London',
+    month: 'Aug.',
+    value: 35.6,
+  },
+  {
+    name: 'London',
+    month: 'Aug.',
+    value: 35.6,
+  },
 
   {
     name: 'Berlin',
@@ -76,6 +91,21 @@ const histo = [
     name: 'Berlin',
     month: 'Jul.',
     value: 37.4,
+  },
+  {
+    name: 'Berlin',
+    month: 'Aug.',
+    value: 42.4,
+  },
+  {
+    name: 'Berlin',
+    month: 'Aug.',
+    value: 42.4,
+  },
+  {
+    name: 'Berlin',
+    month: 'Aug.',
+    value: 42.4,
   },
   {
     name: 'Berlin',
