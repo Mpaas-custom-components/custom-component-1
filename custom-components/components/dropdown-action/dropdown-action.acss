@@ -13,6 +13,27 @@
   border-radius: 5px;
 }
 
+.tag-toggle {
+  color: orange;
+  width: fit-content;
+  font-size: medium;
+  padding: 0rpx 7rpx;
+  border: none;
+  height: 70rpx;
+  display: flex;
+  align-items: center;
+}
+
+.layout{
+  background-color: #FAF0E4;
+  height: 50rpx;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+  box-shadow: 1px 1px 5px gray;
+}
+
 .dropdown-menu {
   white-space: nowrap;
   border: solid 1px gray;
@@ -41,7 +62,7 @@
   flex-wrap: wrap;
 }
 
-.popupContainer{
+.popupContainer {
   position: relative;
   max-height: 800rpx;
   min-height: 300rpx;
@@ -50,7 +71,7 @@
   padding-bottom: 180rpx;
 }
 
-.popupContainer2{
+.popupContainer2 {
   position: relative;
   max-height: 600rpx;
   min-height: 300rpx;
@@ -63,11 +84,12 @@
   display: block;
   margin-bottom: 20rpx;
 }
+
 .radio-text {
   line-height: 1.8;
 }
 
-.radio-group{
+.radio-group {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -75,14 +97,14 @@
   margin: 20px 2rpx;
 }
 
-.radio-group2{
+.radio-group2 {
   display: flex;
   flex-direction: column-reverse;
   gap: 0rpx 20rpx;
   margin: 20px 2rpx;
 }
 
-.radio{
+.radio {
   display: flex;
   background-color: rgb(231, 231, 231);
   min-width: 205rpx;
@@ -92,7 +114,7 @@
   align-items: center;
 }
 
-.radio2{
+.radio2 {
   display: flex;
   background-color: transparent;
   min-width: 205rpx;
@@ -103,24 +125,24 @@
   border-bottom: 1rpx solid rgb(203, 203, 203);
 }
 
-.radio2:active{
+.radio2:active {
   background-color: rgba(255, 166, 0, 0.422);
 }
 
-radio{
+radio {
   border: none;
   position: absolute;
   width: 20rpx;
   height: 70rpx;
 }
 
-.radio-text{
+.radio-text {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.radio-text2{
+.radio-text2 {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -128,7 +150,7 @@ radio{
   font-weight: 900;
 }
 
-.btn-container{
+.btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,7 +164,26 @@ radio{
   padding-bottom: 80rpx;
 }
 
-.title{
+.title {
   font-weight: bold;
   font-size: large;
+  display: flex;
+  gap: 20rpx;
+}
+
+.input {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.387);
+}
+
+.svg {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.tagContent {
+  display: flex;
+  flex-direction: column;
+  gap: 50rpx;
+  padding: 0rpx 20rpx;
+  padding-top: 20rpx;
 }

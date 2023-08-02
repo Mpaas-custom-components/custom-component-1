@@ -1,9 +1,9 @@
 {
   "subPackageBuildType": "shared",
   "pages": [
+    "pages/cash/cash",
     "pages/experiment/experiment",
     "pages/index/index",
-    "pages/cash/cash",
     "pages/chart1/chart1"
   ],
   "window": {
